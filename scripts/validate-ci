@@ -4,6 +4,7 @@ set -e
 cd $(dirname $0)/..
 
 go generate
+GOPATH= go mod vendor
 
 source ./scripts/version
 
